@@ -11,7 +11,7 @@
 int main() {
    setuid(0); // Passe en uid root, 0
    sleep(5);
-   char *command = "/sbin/reboot"; // POinteur
-   execl(command, command, NULL); // Premier command qui se situe dans le Path, le deuxième argument est la commande
+   char *command = "/sbin/reboot"; // Pointeur
+   execl(command, command, NULL); // Premiere commande qui se situe dans le Path, le deuxième argument est la commande
    return 0; // Evite l'erreur (since never returns)
 }
